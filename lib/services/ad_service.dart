@@ -38,20 +38,21 @@ class AdService {
   /// Çözülen soru sayısının kaç adımda bir interstitial tetikleyeceği.
   static const int interstitialFrequency = 4;
 
-  // ---------- Test reklam birim id'leri (Google sample) ----------
-  // https://developers.google.com/admob/android/test-ads
-  static const String _androidBannerTestId =
-      'ca-app-pub-3940256099942544/6300978111';
+  // ---------- Reklam birim id'leri ----------
+  // Android: Emojice production AdMob ad units.
+  // iOS: henüz iOS yayınlanmadığı için Google sample test id'leri kullanılır.
+  static const String _androidBannerId =
+      'ca-app-pub-8438407620610676/5126471265';
   static const String _iosBannerTestId =
       'ca-app-pub-3940256099942544/2934735716';
 
-  static const String _androidInterstitialTestId =
-      'ca-app-pub-3940256099942544/1033173712';
+  static const String _androidInterstitialId =
+      'ca-app-pub-8438407620610676/3054841691';
   static const String _iosInterstitialTestId =
       'ca-app-pub-3940256099942544/4411468910';
 
-  static const String _androidRewardedTestId =
-      'ca-app-pub-3940256099942544/5224354917';
+  static const String _androidRewardedId =
+      'ca-app-pub-8438407620610676/9153346187';
   static const String _iosRewardedTestId =
       'ca-app-pub-3940256099942544/1712485313';
 
@@ -69,32 +70,32 @@ class AdService {
   /// Banner reklam birim id (platforma göre).
   String get bannerAdUnitId {
     if (kIsWeb) {
-      return _androidBannerTestId;
+      return _androidBannerId;
     }
     if (Platform.isIOS) {
       return _iosBannerTestId;
     }
-    return _androidBannerTestId;
+    return _androidBannerId;
   }
 
   String get _interstitialAdUnitId {
     if (kIsWeb) {
-      return _androidInterstitialTestId;
+      return _androidInterstitialId;
     }
     if (Platform.isIOS) {
       return _iosInterstitialTestId;
     }
-    return _androidInterstitialTestId;
+    return _androidInterstitialId;
   }
 
   String get _rewardedAdUnitId {
     if (kIsWeb) {
-      return _androidRewardedTestId;
+      return _androidRewardedId;
     }
     if (Platform.isIOS) {
       return _iosRewardedTestId;
     }
-    return _androidRewardedTestId;
+    return _androidRewardedId;
   }
 
   /// Mobil reklam SDK'sını başlatır. Web/desktop'ta sessizce no-op.

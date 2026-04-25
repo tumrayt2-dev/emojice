@@ -32,11 +32,10 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        <!-- Google Mobile Ads (AdMob) — sample app id (test). Üretime
-             alınırken gerçek AdMob app id ile değiştirilmelidir. -->
+        <!-- Google Mobile Ads (AdMob) — Emojice production app id. -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-8438407620610676~2002673969"/>
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
