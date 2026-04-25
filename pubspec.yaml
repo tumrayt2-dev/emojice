@@ -1,0 +1,77 @@
+name: emoji_tahmin
+description: "Emoji Tahmin — Türkçe offline emoji tahmin oyunu."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Local storage
+  hive_flutter: ^1.1.0
+
+  # Routing
+  go_router: ^14.6.2
+
+  # Monetization
+  google_mobile_ads: ^5.3.1
+  in_app_purchase: ^3.2.0
+
+  # Utilities
+  equatable: ^2.0.5
+  json_annotation: ^4.9.0
+
+  # Animations
+  confetti: ^0.8.0
+
+  # Fonts
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  build_runner: ^2.4.13
+  json_serializable: ^6.9.0
+
+  # Launcher icon üretici
+  flutter_launcher_icons: ^0.14.1
+
+  # Splash screen üretici
+  flutter_native_splash: ^2.4.1
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon_logo.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  adaptive_icon_background: "#7C4DFF"
+  adaptive_icon_foreground: "assets/icon_logo.png"
+
+flutter_native_splash:
+  color: "#7C4DFF"
+  image: "assets/splash.png"
+  android_12:
+    color: "#7C4DFF"
+    image: "assets/icon_logo.png"
+    icon_background_color: "#7C4DFF"
+  android: true
+  ios: true
+  fullscreen: false
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/

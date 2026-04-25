@@ -1,0 +1,196 @@
+[
+  {
+    "id": "animals",
+    "name": "Hayvanlar",
+    "icon": "🐾",
+    "isPremium": false
+  },
+  {
+    "id": "food",
+    "name": "Yiyecekler",
+    "icon": "🍽",
+    "isPremium": false
+  },
+  {
+    "id": "proverbs",
+    "name": "Atasözleri",
+    "icon": "📜",
+    "isPremium": false
+  },
+  {
+    "id": "turkish_series",
+    "name": "Türk Dizileri",
+    "icon": "📼",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 20
+    }
+  },
+  {
+    "id": "turkish_movies",
+    "name": "Türk Filmleri",
+    "icon": "🎞",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 20
+    }
+  },
+  {
+    "id": "jobs",
+    "name": "Meslekler",
+    "icon": "👨‍⚕️",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 20
+    }
+  },
+  {
+    "id": "idioms",
+    "name": "Türk Deyimleri",
+    "icon": "🗣",
+    "isPremium": false,
+    "unlock": {
+      "type": "chain",
+      "value": 20,
+      "chainTarget": "proverbs",
+      "chainValue": 15
+    }
+  },
+  {
+    "id": "foreign_series",
+    "name": "Yabancı Diziler",
+    "icon": "📺",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 60
+    }
+  },
+  {
+    "id": "foreign_movies",
+    "name": "Yabancı Filmler",
+    "icon": "🎬",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 60
+    }
+  },
+  {
+    "id": "songs",
+    "name": "Şarkılar",
+    "icon": "🎵",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 60
+    }
+  },
+  {
+    "id": "sports",
+    "name": "Spor",
+    "icon": "⚽",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 60
+    }
+  },
+  {
+    "id": "turkish_food",
+    "name": "Türk Yemekleri",
+    "icon": "🥘",
+    "isPremium": false,
+    "unlock": {
+      "type": "chain",
+      "value": 60,
+      "chainTarget": "food",
+      "chainValue": 15
+    }
+  },
+  {
+    "id": "countries",
+    "name": "Ülkeler",
+    "icon": "🌍",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 120
+    }
+  },
+  {
+    "id": "places",
+    "name": "Yerler",
+    "icon": "🏛",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 120
+    }
+  },
+  {
+    "id": "history",
+    "name": "Tarihi Olaylar",
+    "icon": "📖",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 120
+    }
+  },
+  {
+    "id": "celebrities",
+    "name": "Ünlü Kişiler",
+    "icon": "⭐",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 120
+    }
+  },
+  {
+    "id": "books",
+    "name": "Kitaplar",
+    "icon": "📚",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 120
+    }
+  },
+  {
+    "id": "cartoons",
+    "name": "Çizgi Filmler",
+    "icon": "🧚",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 220
+    }
+  },
+  {
+    "id": "technology",
+    "name": "Teknoloji",
+    "icon": "💻",
+    "isPremium": false,
+    "unlock": {
+      "type": "totalSolved",
+      "value": 220
+    }
+  },
+  {
+    "id": "mythology",
+    "name": "Mitoloji",
+    "icon": "🐉",
+    "isPremium": false,
+    "unlock": {
+      "type": "chain",
+      "value": 220,
+      "chainTarget": "history",
+      "chainValue": 10
+    }
+  }
+]
